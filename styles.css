@@ -1,0 +1,180 @@
+Ahmed Bashir Isak, [12/19/2022 6:27 AM]
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div id="heading">
+        <h1 id=title>Code learners survey</h1>
+        <p id="description">Welcome to FilanTech online bootcamp</p>
+    </div>
+    <div id="main">
+        <form id="survey-form">
+            <div id="input-fields">
+                <label id="name-label"><b>Name:</b></label>
+                <input id="name" type="name" name="name" class="form" required placeholder="Name"><br>
+                <br>
+                <label id="email-label"><b>Email:</b></label>
+                <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+                <br>
+                <label id="number-label"><b>Age:</b></label>
+                <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="18+">
+            </div>
+            <div id="dropdown-div"><br>
+                <label id="dropdown-label"><strong>Coding language that we study </strong></label><br>
+                <select id="dropdown" name="code-lang" class="form">
+                    <option value="C">(Code Language)</option>
+                    <option value="Python">Python</option>
+                    <option value="Html and Css">Html and Css</option>
+                    
+                   
+                    <option value="Javascript">Javascript</option>
+                    <option value="Go">Go</option>
+                    <option value="">C++</option>
+                    <option value="Java">Java</option>
+                </select>
+            </div>
+            <div id="button-area">
+                <br>
+                <label id="job-label"><b>How many hours you want to learn code?:</b></label><br>
+                <input type="radio" class="radio-inline" name="gender" value="employed" checked>  3-4hrs 
+                (day))<br>
+                <input type="radio" class="radio-inline" name="gender" value="freelancer">  3-4hrs 
+               (night) <br>
+                <input type="radio" class="radio-inline" name="gender" value="applier"> 4-5 hours (day and night))<br>
+                <input type="radio" class="radio-inline" name="gender" value="unemployed"> 5+ hours (day and night)
+            </div>
+            <div id="button-area"><br>
+                <label id="os-label"><b>select your education level: </b></label><br>
+                <input type="checkbox" name="os1" value="windows" checked>School level<br>
+                <input type="checkbox" name="os2" value="linux">Univesity level<br>
+                <input type="checkbox" name="0s3" value="mac">no education background<br>
+            </div>
+
+Ahmed Bashir Isak, [12/19/2022 6:27 AM]
+<div id="dropdown"><br><br>
+                <label id="dropdown-label"><strong>Coding languanges you prefere: </strong></label><br>
+                <select id="dropdown" name="code-lang" class="form"><br><br>
+                    <option value="C"> (Code Language)</option>
+                    <option value="Python">Python</option>
+                    <option value="Html and Css">Html and Css</option>
+                    <option value="Python">Python</option>
+                    <option value="Javascript">Javascript Script</option>
+                    <option value="Php">Php (Programming Language)</option>
+                    <option value="Jva">Jva on rails</option>
+                    <option value="C++">C++</option>
+                    <option value="Java">Java</option>
+                </select>
+            </div>
+            <div id="button-area"><br><br>
+                <label id="os-label"><b>Which languge do yun want to start</b></label><br>
+                <input type="checkbox" name="tech1" value="flutter"> Flutter UI<br>
+                <input type="checkbox" name="tech2" value="nodejs"> Java<br>
+                <input type="checkbox" name="tech3" value="tnflow"> Python<br>
+                <input type="checkbox" name="tech3" value="git"> C++<br>
+                <input type="checkbox" name="tech3" value="devops"> PHP<br>
+            </div>
+
+
+            <div id="ending"><br><br>
+                <label id="comments-label">Please write your comment here?</label><br>
+                <textarea style=height:120px;" class="form"
+                    placeholder="Please comment here..."></textarea><br><br>
+                <input id="submit" type="submit" class="form">
+            </div>
+        </form>
+    </div>
+
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+</html>
+
+Ahmed Bashir Isak, [12/19/2022 6:28 AM]
+h1{
+    background-color: lightblue;
+    text-align: center;
+    }
+    form{
+      max-width: 500px;
+      text-align: left;
+      padding: 20px;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+    .input-element {
+      margin: 10px;
+    }
+    body {
+        font-family: 'Raleway', sans-serif;
+        background-image: url("../images/Background.jpg");
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color:   lightblue;
+        color: #fff;
+        font-size: 1.2vw;
+    }
+    
+    #heading {
+        max-width: 750px;
+        margin: 4rem auto;
+        padding: .6rem;
+    }
+    
+    #main {
+        padding: 0% 20% 0% 20%;
+    }
+    
+    #title {
+        font-size: 2.2rem;
+        text-align: center;
+        line-height: 1.2;
+        padding: .6rem;
+    }
+    
+    #description {
+        font-size: 1.1rem;
+        text-align: center;
+        padding: .2rem;
+    }
+    
+    #survey-form {
+        background-color: #2222425d;
+        padding: 3rem 2.5rem;
+        border-radius: 7px;
+    }
+    
+    #submit {
+        background: red;
+        color: #fff;
+        padding: .7rem;
+        font-size: 1.15rem;
+        cursor: pointer;
+    }
+    
+    #submit:hover {
+        background: blue;
+    }
+    
+    .form {
+        width: 100%;
+        padding: .7rem;
+        border-radius: 6px;
+        font-size: 1.0rem;
+        border: none;
+    }
+    
+    @media only screen and (max-width:480px) {
+    
+        #main {
+            padding: 0% 0% 0% 0%;
+        }
+    }
